@@ -1,9 +1,10 @@
 import React from 'react'
+import TopNavbar from './components/Nabars/TopNavbar'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <TopNavbar />
     </div>
   )
 }

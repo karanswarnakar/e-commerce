@@ -16,10 +16,9 @@
 }
 
 :root {
-  --bg-color: #000;
+  --bg-color: #003b22;
   --primary-text-color: #fafafa;
-  --bg-food-color: #cb2929;
-  --bg-column-color: #333;
+  --text-color:#013c23;
   --bg-button-color: #121212;
   --task-color: #111;
   /* Spacing scale */
@@ -83,4 +82,33 @@
   --animation-fast: all .3s cubic-bezier(.7, 0, .3, 1);
   --animation-smooth: all .7s cubic-bezier(.7, 0, .3, 1);
   --animation-slow: all .9s cubic-bezier(.7, 0, .3, 1);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--space-sm) * 1.5) var(--space-3xl);
+  font-family: var(--font-secondery);
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
+.top-nav p {
+  font-size: var(--fs-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.top-nav p b {
+  color: #f9c82d;
+}
+.top-nav .icons {
+  display: flex;
+  gap: var(--space-md);
+  font-size: var(--fs-xs);
+}
+.top-nav .icons i {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
