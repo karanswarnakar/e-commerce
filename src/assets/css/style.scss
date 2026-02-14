@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,9 +24,10 @@
 :root {
 
     --bg-color: #003b22;
+    --bg-light-color: #159e4c;
     --primary-text-color: #fafafa;
-    
-    --text-color:#013c23;
+
+    --text-color: #013c23;
 
     --bg-button-color: #121212;
     --task-color: #111;
@@ -108,65 +109,157 @@
     --animation-slow: all .9s cubic-bezier(.7, 0, .3, 1);
 
 }
-@mixin dis-flex(){
+
+@mixin dis-flex() {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
 }
 
 // Top-navbar
 
-.top-nav{
+.top-nav {
     @include dis-flex();
-    justify-content:space-between;
-    padding: calc(var(--space-sm)*1.7) var(--space-3xl);    
+    justify-content: space-between;
+    padding: calc(var(--space-sm)*1.7) var(--space-3xl);
     font-family: var(--font-secondery);
     background-color: var(--bg-color);
     color: var(--primary-text-color);
-    p{
+
+    p {
         font-size: var(--fs-sm);
         @include dis-flex();
         gap: var(--space-xs);
-        font-weight: 800;
-        b{
+
+        b {
             color: #f9c82d;
         }
     }
-    .icons{
+
+    .icons {
         display: flex;
         gap: var(--space-md);
         font-size: var(--fs-xs);
-        i{
+
+        i {
             cursor: pointer;
         }
     }
 }
 
-.main-nav{
-    background-color: var(--primary-text-color);
-    padding: var(--space-md) var(--space-3xl);
-    .nav-bar-container{
+.main-nav {
+
+    padding: var(--space-md) var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    border-bottom: 1px solid #dadada;
+
+    .nav-bar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            h1{
-                font-family: var(--font-titel);
+
+        .logo {
+            h1 {
+                font-family: var(--font-secondery);
                 color: var(--bg-color);
+                font-weight: 300;
             }
         }
-        .nav-links{
+
+        .search-bar {
+            width: 100%;
             display: flex;
-            gap: var(--space-lg);
-            a{
-                text-decoration: none;
-                color: var(--text-color);
-                font-size: var(--fs-md);
-                font-weight: 500;
-                transition: var(--animation-primary);
-                &:hover{
-                    color: var(--bg-color);
+            align-items: center;
+            justify-content: stretch;
+            padding: var(--space-xs) var(--space-md);
+
+            input {
+                height: 50px;
+                width: 100%;
+                padding: 0 var(--space-md);
+                border: 1px solid #dadada;
+                border-top-left-radius: var(--border-radius-sm);
+                border-bottom-left-radius: var(--border-radius-sm);
+                outline: none;
+                width: 100%;
+            }
+
+            button {
+                height: 50px;
+                width: 50px;
+                background-color: var(--bg-light-color);
+                color: var(--primary-text-color);
+                border: none;
+                border-top-right-radius: var(--border-radius-sm);
+                border-bottom-right-radius: var(--border-radius-sm);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--bg-color);
                 }
+            }
+        }
+
+        .btn-contener {
+            display: flex;
+            gap: var(--space-sm);
+
+            .btn {
+                height: 50px;
+                width: 50px;
+                border-radius: var(--border-radius-xs);
+                outline: none;
+                border: 1px solid #dadada;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--space-sm) 0;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: var(--space-lg);
+            ::selection {
+                background-color: transparent;
+            }
+            li {
+                font-weight: 600;
+                color: var(--bg-color);
+                cursor: pointer;
+                font-size: var(--fs-sm);
+                
+                &:hover {
+                     color: var(--bg-light-color);
+                }
+            }
+
+        }
+
+        .tags {
+            display: flex;
+            gap: var(--space-md);
+            color: var(--bg-light-color);
+            font-size: var(--fs-sm);
+
+            .tag {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: var(--space-xs);
+                cursor: pointer;
+               span{
+                 &:hover {
+                    text-decoration: underline;
+                }
+               }
             }
         }
     }

@@ -3,7 +3,7 @@ import Icons from '../Custome/IconComponent'
 const TopNavbar = () => {
     return (
         <div className='top-nav'>
-            <p><i class="fa-sharp fa-light fa-phone"></i>Call Us: +1-800-123-456</p>
+            <p><i className="fa-sharp fa-light fa-phone"></i>Call Us: +1-800-123-456</p>
 
             <p>Get Free Delivery on Orders Over $100 <b>–Shop Now!</b></p>
 
