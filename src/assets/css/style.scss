@@ -119,13 +119,15 @@
 .top-nav{
     @include dis-flex();
     justify-content:space-between;
-    padding: calc(var(--space-sm)*1.5) var(--space-3xl);    font-family: var(--font-secondery);
+    padding: calc(var(--space-sm)*1.7) var(--space-3xl);    
+    font-family: var(--font-secondery);
     background-color: var(--bg-color);
     color: var(--primary-text-color);
     p{
         font-size: var(--fs-sm);
         @include dis-flex();
         gap: var(--space-xs);
+        font-weight: 800;
         b{
             color: #f9c82d;
         }
@@ -136,6 +138,36 @@
         font-size: var(--fs-xs);
         i{
             cursor: pointer;
+        }
+    }
+}
+
+.main-nav{
+    background-color: var(--primary-text-color);
+    padding: var(--space-md) var(--space-3xl);
+    .nav-bar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            h1{
+                font-family: var(--font-titel);
+                color: var(--bg-color);
+            }
+        }
+        .nav-links{
+            display: flex;
+            gap: var(--space-lg);
+            a{
+                text-decoration: none;
+                color: var(--text-color);
+                font-size: var(--fs-md);
+                font-weight: 500;
+                transition: var(--animation-primary);
+                &:hover{
+                    color: var(--bg-color);
+                }
+            }
         }
     }
 }
