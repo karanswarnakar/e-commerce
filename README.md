@@ -7,9 +7,12 @@ Reference: https://groceria.madrasthemes.com/
 4. Built the top announcement bar (`TopNavbar`) with a phone contact line, a promo message highlight, and a social media icon row.
 5. Added the main navigation bar (`Navbar`) with logo, search form, account/cart actions, menu links, and promo tags.
 6. Styled the main navigation layout, search bar, buttons, menus, and tags in `src/assets/css/style.scss`.
-7. Added a reusable icon wrapper component (`IconComponent`).
-8. Linked Font Awesome stylesheets in `index.html` to support icon classes.
+7. Added reusable UI atoms: `IconComponent`, `Button`, and `TitelWithLink`.
+8. Built the category menu (`MenuCatagoryCard`) and circular category cards (`CircleCatagory`) with mixed image and color variants.
+9. Built the hero cover section (`Section1`) using `Cover` with CTA copy and button.
+10. Built the "Fresh in Today" section (`Section2`) with a title + link header and a product card (`Product`) for the grid layout.
+11. Linked Font Awesome stylesheets in `index.html` to support icon classes.
 
 **Current Render**
-1. `src/App.jsx` renders `TopNavbar` and `Navbar`.
+1. `src/App.jsx` renders `TopNavbar`, `Navbar`, `Catagory`, `Section1`, and `Section2`.
 2. `src/main.jsx` loads the global stylesheet and mounts `App`.
