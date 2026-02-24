@@ -1,12 +1,12 @@
 import React from 'react'
 
-const TitelWithLink = ({data}) => {
+const TitelWithLink = ({title,link}) => {
     return (
         <div className='title-contener'>
             <p className="title">
-                {data.title}
+                {title}
             </p>
-            <a href={data.link}>View All</a>
+            <a href={link}>View All</a>
         </div>
     )
 }

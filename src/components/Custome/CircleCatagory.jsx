@@ -40,7 +40,7 @@ const CircleCatagory = ({ data }) => {
             return <div className="menu-catagory-card">
                 <div className="ctagory-img"
                     style={{
-                        backgroundImage: `url("./src/assets/image/${data.image}")`,
+                        backgroundImage: `url("../public/image/${data.image}")`,
                         backgroundPosition: 'center',
                         borderImageRepeat: 'no-repeat',
                         backgroundSize: 'cover',

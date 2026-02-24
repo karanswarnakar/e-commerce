@@ -11,7 +11,7 @@ const Navbar = () => {
           <form className="search-bar">
             <input type="text" placeholder="Search for food..." required />
             <button type="submit">
-              <i class="fa-light fa-magnifying-glass"></i>
+              <i className="fa-light fa-magnifying-glass"></i>
             </button>
           </form>
         </div>

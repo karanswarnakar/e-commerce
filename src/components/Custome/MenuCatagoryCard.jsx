@@ -64,8 +64,8 @@ const categories = [
 const MenuCatagoryCard = () => {
   return (
     <div className='menu-catagory-containar'>
-        {categories.map((elm)=>{
-          return <CircleCatagory data={elm}/>
+        {categories.map((elm,idx)=>{
+          return <CircleCatagory data={elm} key={idx}/>
         })}
     </div>
   )
