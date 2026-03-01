@@ -26,7 +26,7 @@
     --bg-color: #003b22;
     --bg-light-color: #159e4c;
     --primary-text-color: #fafafa;
-
+    --bg-yellow:#f9c82d;
     --text-color: #013c23;
 
     --bg-button-color: #121212;
@@ -494,4 +494,40 @@
         }
     }
 
+}
+
+.sub-contain{
+padding: 2rem;
+display: flex;
+flex-direction: column;
+gap: var(--space-md);
+h1{
+    font-weight: 600;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+        .cont{
+         height: 80px;
+        width: 131px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        margin: 0 var(--space-lg);
+    }
+    .con-text{
+        background-color: var(--bg-yellow);
+        border-radius: 50rem;
+        font-weight: 500;
+        color: var(--bg-button-color);
+    }
+    .con-img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    }
 }
