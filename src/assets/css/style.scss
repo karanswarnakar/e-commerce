@@ -495,7 +495,24 @@
     }
 
 }
+// Section 3
 
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    .cover-image{
+        height: 100%;
+        width: fit-content;
+    }
+    .card-grid:nth-child(1){
+        background-color: blue;
+    }
+}
+
+
+
+// Section 4
 .sub-contain{
 padding: 2rem;
 display: flex;
@@ -531,3 +548,4 @@ div{
     }
     }
 }
+

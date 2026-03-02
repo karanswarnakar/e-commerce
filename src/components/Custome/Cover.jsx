@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Cover = (props) => {
   return (
-    <div className='cover-image'
+    <div className='card-grid cover-image'
       style={{
         backgroundImage: `url("${props.img}")`,
         backgroundPosition: `center`,
