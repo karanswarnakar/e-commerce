@@ -497,15 +497,26 @@
 }
 // Section 3
 
-.grid-card{
+.grid-card-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    .cover-image{
+  padding: 1rem 3rem;
+    .card-content{
         height: 100%;
         width: fit-content;
+        grid-template-columns: 1fr;
+        .text-data{
+          width: 100%;
+          font-size: 1rem;
+          h1 {
+            width: 100%;
+            padding:0;
+            font-weight: 600;
+        }
+        }
     }
-    .card-grid:nth-child(1){
+    .card-content:nth-child(1){
         background-color: blue;
     }
 }

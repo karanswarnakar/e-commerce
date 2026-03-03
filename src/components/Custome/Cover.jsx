@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Cover = (props) => {
   return (
-    <div className='card-grid cover-image'
+    <div className='card-content cover-image'
       style={{
         backgroundImage: `url("${props.img}")`,
         backgroundPosition: `center`,
@@ -21,7 +21,8 @@ const Cover = (props) => {
 
         <Button text="Shop Now" />
       </div>
-      <span></span>
+      
+      {props.span!=true? " " : <span></span>}
     </div>
   )
 }

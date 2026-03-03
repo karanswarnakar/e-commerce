@@ -1,12 +1,12 @@
 import Cover from '../Custome/Cover'
 const Section3 = () => {
     return (
-        <div className='grid-card'>
-            <Cover />
-            <Cover />
-            <Cover />
-            <Cover />
-            <Cover />
+        <div className='grid-card-content'>
+            <Cover span={false} />
+            <Cover span={false} />
+            <Cover span={false} />
+            <Cover span={false} />
+            <Cover  span={false}/>
         </div>
     )
 }
