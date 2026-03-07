@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Button from './Button';
 const GridCard = ({data}) => {
   return (
     <div className='card-content cover-image'
       style={{
-        backgroundImage: `url("${props.img}")`,
+        backgroundImage: `url("${data.img}")`,
         backgroundPosition: `center`,
         borderImageRepeat: `no-repeat`
       }}
@@ -27,7 +27,7 @@ const GridCard = ({data}) => {
         <Button text="Shop Now" />
       </div>
       
-      {props.span!=true? " " : <span></span>}
+      {data.span!=true? " " : <span></span>}
     </div>
   )
 }
