@@ -1,12 +1,16 @@
 import React from 'react'
 import Button from './Button';
-const GridCard = ({data}) => {
+
+
+const GridCard = ({ data, span = false }) => {
+  const tagText = data?.subtitle || "Hurry! Limited Time Deals Await!";
+  const titleText = data?.title || "Nourish Your Body with Nature's Best Vitamins!";
+  const descText = data?.description || "Sign Up Now & Save $20 on Your First Order!";
+
   return (
     <div className='card-content cover-image'
       style={{
-        backgroundImage: `url("${data.img}")`,
-        backgroundPosition: `center`,
-        borderImageRepeat: `no-repeat`
+        backgroundImage: data?.img ? `url("${data.img}")` : "none"
       }}
     >
         {/*   id: 1,
@@ -17,19 +21,17 @@ const GridCard = ({data}) => {
             discount: null */}
       <div className="text-data">
         <div className="tag">
-          Hurry! Limited Time Deals Await!
+          {tagText}
         </div>
-
-        <h1>Nourish Your Body with Nature’s Best Vitamins!</h1>
-        <p>Sign Up Now & Save $20 on Your First Order!</p>
-
-
-        <Button text="Shop Now" />
+        <h1>{titleText}</h1>
+        <p>{descText}</p>
+        {data?.buttonText ? <Button text={data.buttonText} /> : null}
       </div>
       
-      {data.span!=true? " " : <span></span>}
+      {span ? <span></span> : null}
     </div>
   )
 }
 
 export default GridCard
+

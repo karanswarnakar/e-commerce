@@ -8,7 +8,8 @@ const Section3 = () => {
             subtitle: "Unlock Up To",
             description: "Fuel your day with the purest from nature.",
             buttonText: "Shop Now",
-            discount: null
+            discount: null,
+            img: "/image/banner-1.webp"
         },
         {
             id: 2,
@@ -16,7 +17,8 @@ const Section3 = () => {
             subtitle: "Claim Up To",
             description: "Fuel your day with the purest from nature.",
             buttonText: "Shop Now",
-            discount: null
+            discount: null,
+            img: "/image/banner-2.webp"
         },
         {
             id: 3,
@@ -24,15 +26,17 @@ const Section3 = () => {
             subtitle: "Nourish Boldly, Spend Wisely!",
             description: "Weekend Only",
             buttonText: null,
+            img: "/image/banner-3.webp",
             discount: "30%"
         },
         {
             id: 4,
             title: "Just Arrived",
-            subtitle: "Fresh from Nature’s Farm",
+            subtitle: "Fresh from Nature's Farm",
             description: "Just",
             price: "$29.00",
-            buttonText: null
+            buttonText: null,
+            img: "/image/banner-4.webp"
         },
         {
             id: 5,
@@ -40,6 +44,7 @@ const Section3 = () => {
             subtitle: "Tastes Like Fresh, Feels Like a Deal!",
             description: "Enjoy an extra 25% off",
             buttonText: null,
+            img: "/image/banner-5.webp",
             discount: "25%"
         }
     ];
@@ -55,3 +60,4 @@ const Section3 = () => {
 }
 
 export default Section3
+

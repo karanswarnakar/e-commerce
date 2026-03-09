@@ -1,13 +1,13 @@
 import React from 'react'
 import Button from './Button'
 
+
 const Cover = (props) => {
+
   return (
     <div className='card-content cover-image'
       style={{
-        backgroundImage: `url("${props.img}")`,
-        backgroundPosition: `center`,
-        borderImageRepeat: `no-repeat`
+        backgroundImage: `url("${props.img}")`
       }}
     >
       <div className="text-data">
