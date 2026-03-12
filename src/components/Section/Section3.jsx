@@ -40,8 +40,8 @@ const Section3 = () => {
         },
         {
             id: 5,
-            title: "Seasonal Special",
-            subtitle: "Tastes Like Fresh, Feels Like a Deal!",
+            title: "Tastes Like Fresh, Feels Like a Deal!",
+            subtitle: "seasonal special",
             description: "Enjoy an extra 25% off",
             buttonText: null,
             img: "/image/banner-5.webp",
